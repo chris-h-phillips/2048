@@ -167,6 +167,8 @@ GameManager.prototype.move = function (direction) {
           // Converge the two tiles' positions
           tile.updatePosition(positions.next);
 
+		  new Audio('http://www.freesound.org/data/previews/33/33245_65091-lq.mp3').play();
+
           // Update the score
           self.score += merged.value;
 
